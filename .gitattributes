@@ -1,0 +1,96 @@
+# ============================================================
+# NORMALIZACION GENERAL DE FINALES DE LINEA
+# ============================================================
+# Los archivos de texto se almacenan con finales LF.
+* text=auto eol=lf
+
+# ============================================================
+# PYTHON Y CODIGO FUENTE
+# ============================================================
+*.py text eol=lf
+*.pyi text eol=lf
+*.sh text eol=lf
+
+# ============================================================
+# JUPYTER NOTEBOOK
+# ============================================================
+# Los notebooks son documentos JSON tratados como texto.
+*.ipynb text eol=lf
+
+# ============================================================
+# DOCUMENTACION
+# ============================================================
+*.md text eol=lf
+*.rst text eol=lf
+*.txt text eol=lf
+*.adoc text eol=lf
+
+# ============================================================
+# CONFIGURACION
+# ============================================================
+.gitignore text eol=lf
+.gitattributes text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+*.xml text eol=lf
+
+# ============================================================
+# DATASETS DE TEXTO
+# ============================================================
+# CSV y otros formatos de texto pueden compararse mediante Git.
+*.csv text eol=lf
+*.tsv text eol=lf
+
+# ============================================================
+# DATOS BINARIOS
+# ============================================================
+*.parquet binary
+*.feather binary
+*.h5 binary
+*.hdf5 binary
+*.sqlite binary
+*.sqlite3 binary
+*.db binary
+
+# ============================================================
+# MODELOS Y ARTEFACTOS DE MACHINE LEARNING
+# ============================================================
+*.pkl binary
+*.pickle binary
+*.joblib binary
+*.onnx binary
+*.pt binary
+*.pth binary
+*.keras binary
+*.safetensors binary
+
+# ============================================================
+# IMAGENES Y GRAFICOS
+# ============================================================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.bmp binary
+*.tiff binary
+*.ico binary
+*.svg text eol=lf
+
+# ============================================================
+# DOCUMENTOS Y ARCHIVOS COMPRIMIDOS
+# ============================================================
+*.pdf binary
+*.zip binary
+*.gz binary
+*.7z binary
+*.rar binary
+*.xlsx binary
+*.xls binary
+*.pptx binary
+*.docx binary

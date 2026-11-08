@@ -1,13 +1,140 @@
+# ============================================================
+# PYTHON: BYTECODE Y ARCHIVOS COMPILADOS
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ============================================================
+# ENTORNOS VIRTUALES
+# ============================================================
 .venv/
 venv/
 env/
-pycache/
-*.py[cod]
-*.pyd
-.ipynb_checkpoints/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================================
+# VARIABLES DE ENTORNO Y SECRETOS
+# ============================================================
 .env
 .env.*
-.vscode/
+!.env.example
+!.env.template
+
+# ============================================================
+# VS CODE: CONFIGURACION PERSONAL
+# ============================================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# ============================================================
+# JUPYTER NOTEBOOK E IPYTHON
+# ============================================================
+.ipynb_checkpoints/
+.virtual_documents/
+
+# ============================================================
+# DATA: DATOS PROCESADOS Y EXTERNOS
+# ============================================================
+# Se conserva .gitkeep para mantener los directorios vacios.
+# data/raw/ NO se ignora: contiene el dataset original.
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/external/*
+!data/external/.gitkeep
+
+# ============================================================
+# MODELS: MODELOS ENTRENADOS REGENERABLES
+# ============================================================
+models/*
+!models/.gitkeep
+
+# ============================================================
+# ARTIFACTS: ARTEFACTOS REGENERABLES
+# ============================================================
+artifacts/*
+!artifacts/.gitkeep
+
+# ============================================================
+# OUTPUTS: RESULTADOS GENERADOS
+# ============================================================
+outputs/*
+!outputs/.gitkeep
+
+# ============================================================
+# LOGS: REGISTROS DE EJECUCION
+# ============================================================
+logs/*
+!logs/.gitkeep
+
+# ============================================================
+# REPORTS: INFORMES GENERADOS AUTOMATICAMENTE
+# ============================================================
+reports/generated/*
+!reports/generated/.gitkeep
+
+# ============================================================
+# FORMATOS BINARIOS DE DATOS Y MODELOS
+# ============================================================
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.sqlite
+*.sqlite3
+*.db
+
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.keras
+*.safetensors
+
+# ============================================================
+# TESTING, ANALISIS Y CACHES
+# ============================================================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ============================================================
+# DISTRIBUCION Y EMPAQUETADO
+# ============================================================
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# ============================================================
+# LOGS Y ARCHIVOS TEMPORALES
+# ============================================================
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# ============================================================
+# SISTEMA OPERATIVO
+# ============================================================
 .DS_Store
 Thumbs.db
-*.log
+ehthumbs.db
+desktop.ini
