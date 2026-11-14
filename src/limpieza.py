@@ -95,7 +95,7 @@ def limpiar_datos_cardiovasculares(
     for col, valores in VALORES_REPETIDOS.items():
         mascara = pd.Series(False, index=out.index)
         for v in valores:
-            mascara |= np.isclose(out[col], v, atol=0.005)
+            mascara |= np.isclose(out[col], v, atol=0.005, rtol=0)
         filas_afectadas |= mascara
         celdas, _ = anular(mascara, [col])
         anotar(6, f"{col}: valores repetidos {valores} a NaN", col, celdas)
