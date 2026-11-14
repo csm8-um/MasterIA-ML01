@@ -56,5 +56,5 @@ LIMITES_PLAUSIBILIDAD = {
 # Opciones del análisis de sensibilidad de la decisión 8.
 REGLAS_LIPIDOS = ("conservar", "ldl_nan", "ambos_nan")
 
-# Opciones del análisis de sensibilidad de la decisión 4 (alcohol negativo).
+
 REGLAS_ALCOHOL = ("recortar", "nan")
